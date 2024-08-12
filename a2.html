@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Introducing...</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Night two</h1>
+  
+  
+  <img id = yes src = "https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/g742vuq7.gif">
+  <p id = no>You are hungry. You need to eat.</p>
+  <p id = mab>0 </p>
+  <button type = "button" onclick= "fly()"> 🦇 EAT PASSING FLY    🦇 </button>
+  <button type = "button" onclick = "crawl()">🐜     SWALLOW FOOD 
+  🐜</button>
+  
+  <br>
+ 
+  
+
+ 
+  <script >
+    let total = 0
+    let one = 1
+    let cost = 20
+    function fly() {
+      total += one
+      document.getElementById("mab").innerHTML = total
+      if (total > 2000)
+      {
+        document.getElementById("no").innerHTML = "You have extinct an entire species. You cannot eat anymore flies: https://the-calamity-of-the-sullen-sands-act-one.datrepla4.repl.co/a6.html"
+      }
+      else if (total > 1500)
+      {
+        document.getElementById("no").innerHTML = "You have eaten way more flies than is necessary. You are already full, why keep on going."
+        
+      }
+      else if (total > 1000)
+      {
+        document.getElementById("no").innerHTML = "You are now satisfied. You are full.: https://the-calamity-of-the-sullen-sands-act-one.datrepla4.repl.co/a2.html"
+      }
+      else if (total > 500)
+      {
+        document.getElementById("no").innerHTML = "You have eaten some flies but you are still quite hungry."
+      }
+      else{
+        document.getElementById("no").innerHTML = "You eat some flies."
+      }
+    }
+    
+    function retry() {
+      document.getElementById("yes").src = "https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/553hljsr.gif"
+      document.getElementById("no").innerHTML = "You are a fly. You are hungry. You know that a many wingbuzzes from your current location is a giant vault full of food. You have to get there quickly, as it becomes heavily fortitfied at night. You're going to need to cover a lot of distance"
+    }
+    
+    function crawl() {
+      
+      if (total >= cost)
+      {
+        one *= 2
+        total -= cost
+        cost *= 2
+        document.getElementById("mab").innerHTML = total
+        window.alert("You swallow your food, giving you a boost in speed. (You can eat "+ one + " x as many bugs)")
+      }
+      else{
+        window.alert("Not enough flies")
+      }
+    }
+    
+  </script> 
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>that you</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Scene three</h1>
+  
+  
+  <img id = yes src = "https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/x4jgvxpw.gif">
+  <p id = no>You crawl under the fence. You are now the closest you've ever been to the cornucopia of your dreams. But you have to plan your next step carefully as this area is populated by giants.</p>
+  <a href = "f4.html"><button type = "button" >✈️ EVASIVE MANOUVRES  ✈️</button></a>
+  <a href = "f6.html"> <button type = "button" > ⃟ ZOOM  ⃟</button> </a>
+  <button type = "button" onclick = "low()">⬇️     STAY LOW ⬇️</button>
+  
+  <br>
+  <button type = "button" onclick = "retry()"> RETRY </button>
+  
+
+ 
+  <script >
+    function low() {
+      document.getElementById("yes").src = "https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/rntklnw6.gif"
+      document.getElementById("no").innerHTML = " 'If you stay on the ground because it is safe, how do you expect to rise up in life.' - Abbas ibn Flynas, polymath'"
+    }
+    
+    function retry() {
+      document.getElementById("yes").src = "https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/x4jgvxpw.gif"
+      document.getElementById("no").innerHTML = "You crawl under the fence. You are now the closest you've ever been to the cornucopia of your dreams. But you have to plan your next step carefully as this area is populated by giants."
+    }
+    
+    
+  </script> 
+</body>
+
+</html>

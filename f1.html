@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Introducing...</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Scene one</h1>
+  
+  
+  <img id = yes src = "https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/553hljsr.gif">
+  <p id = no>A great famine has fallen upon your village, a clear result of the corruption of the wasp mafia and the constant threat of 8 legged assassins killing your suppliers before they can reach home. You have been tasked with supplying your village with food. A daunting task for many of your kind. But, you know that many wingbuzzes from your current location is a giant vault full of food. You have to get there quickly, as it becomes heavily fortitfied at night. You're going to need to cover a lot of distance. You are also armed with 1 grenade, which you should use wisely.</p>
+  <button type = "button" onclick= "fly()"> 🦇    FLY    🦇 </button>
+  <button type = "button" onclick = "crawl()">🐜     CRAWL 
+  🐜</button>
+  <a href = "f2.html"> <button type = "button" >🕴️    HOVER 
+  🕴️</button> </a>
+  <a href = "g1.html"> <button type = "button" >👀    SEEK 
+  👀</button> </a>
+  <br>
+  <button type = "button" onclick = "retry()"> RETRY </button>
+  
+
+ 
+  <script >
+    function fly() {
+      document.getElementById("yes").src = "https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/gbx8shsg.gif"
+      document.getElementById("no").innerHTML = "Exposing yourself to predators is certainly a quick way to get somewhere."
+    }
+    
+    function retry() {
+      document.getElementById("yes").src = "https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/553hljsr.gif"
+      document.getElementById("no").innerHTML = "You are a fly. You are hungry. You know that a many wingbuzzes from your current location is a giant vault full of food. You have to get there quickly, as it becomes heavily fortitfied at night. You're going to need to cover a lot of distance"
+    }
+    function crawl() {
+      document.getElementById("yes").src = "https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/49lkssay.gif"
+      document.getElementById("no").innerHTML = "Something that is MANY WINGBUZZES AWAY cannot be reached by walking"
+    }
+    
+  </script> 
+</body>
+
+</html>

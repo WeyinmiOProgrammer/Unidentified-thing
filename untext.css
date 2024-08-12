@@ -1,0 +1,15 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/ir4ophph.gif");
+}
+
+p {
+  color: white;
+  background-color: black;
+  border: green;
+}
+
+a {
+  color: #00eeff
+}

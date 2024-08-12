@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>the threat</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Scene two</h1>
+  
+  
+  <img id = yes src = "https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/57djsog0.gif">
+  <p id = no>You are closer to the source of plenty, but there is a large obstruction in the way. You are also exposed by very short grass, so if you don't move fast you may find yourself inside a scary beast's stomach.</p>
+  <button type = "button" onclick= "fly()">🦇 FLY OVER  🦇</button>
+  <a href = "f3.html"> <button type = "button" >🐜 CRAWL UNDER 🐜</button> </a>
+  <button type = "button" onclick = "climb()">🧗‍♂️     CLIMB ACROSS 🧗‍♂️</button>
+  
+  <br>
+  <button type = "button" onclick = "retry()"> RETRY </button>
+  
+
+ 
+  <script >
+    function fly() {
+      document.getElementById("yes").src = "https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/gbx8shsg.gif"
+      document.getElementById("no").innerHTML = "I hear blue flies are a delicacy to most of the avian community."
+    }
+    
+    function retry() {
+      document.getElementById("yes").src = "https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/57djsog0.gif"
+      document.getElementById("no").innerHTML = "You are closer to the source of plenty, but there is a large obstruction in the way. You are also exposed by very short grass, so if you don't move fast you may find yourself inside a scary beast's stomach."
+    }
+    function climb() {
+      document.getElementById("yes").src = "https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/1i7zokjv.gif"
+      document.getElementById("no").innerHTML = "To be a fly on the wall of your life"
+    }
+    
+  </script> 
+</body>
+
+</html>
